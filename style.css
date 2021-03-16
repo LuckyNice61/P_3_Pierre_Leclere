@@ -1,5 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   background-color: pink;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: auto;
+  color: #000;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
