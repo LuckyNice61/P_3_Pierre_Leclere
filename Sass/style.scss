@@ -8,11 +8,88 @@ body{
     font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin: auto;
-  color:#000;
+  color:$color-black;
 }
 h1 {
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0 0 40px 0;
     text-align: center; }
+
+h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 50px 0 30px 30px;
+      text-align: left;
+      color: $color-black; }
+
+      h4 {
+        font-family: "Shrikhand", cursive;
+        font-weight: 400;
+        margin: 0;
+        text-align: left;
+        color: $color-black; }
+        @media screen and (max-width: 750px) {
+          h4 {
+            font-size: 1.75rem; } }
+        @media screen and (min-width: 751px) {
+          h4 {
+            font-size: 2.3rem; } }
+      
+
   
+a:visited{
+  text-decoration: none;
+  color: $color-black;
+  &:link{
+    text-decoration: none;
+  color: $color-black;
+  }
+  &:active{
+    text-decoration: none;
+  color: $color-black;
+  }
+}
+
+footer a:visited{
+  text-decoration: none;
+  color: #FFFFFF;
+  &:link{
+    text-decoration: none;
+  color: #FFFFFF;
+  }
+  &:active{
+    text-decoration: none;
+  color: #FFFFFF;
+  }
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15); }
+  .container_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px; 
+  &.localisation_header{
+    position: absolute;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+        top: 0;
+
+  }}  
+
+    .container_header img {
+      width: auto;
+      height: 30px; }   
+
+      
+
