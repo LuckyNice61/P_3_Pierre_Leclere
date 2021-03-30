@@ -1,0 +1,28 @@
+.btn {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    max-width: 15rem;
+    margin-top: 20px;
+    padding: 0.3rem;
+    line-height: 3em;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: linear-gradient(175deg, $color-btn 10%, #9356DC$color-circle);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 150ms linear, transform 150ms linear;
+    &:hover {
+        transform: scale(0.98);
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3); 
+    }
+    &:active {
+        transform: scale(0.97);
+        box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+      
+    
+
+       
