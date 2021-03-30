@@ -46,11 +46,13 @@ a:visited {
   text-decoration: none;
   color: #000000;
 }
-a:visited:link {
+
+a:link {
   text-decoration: none;
   color: #000000;
 }
-a:visited:active {
+
+a:active {
   text-decoration: none;
   color: #000000;
 }
@@ -249,6 +251,32 @@ footer .logo img {
 .footer_menu i {
   font-size: 0.9rem;
   margin-right: 10px;
+}
+
+.button_1 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 220px;
+  height: 55px;
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 90%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 150ms linear, transform 150ms linear;
+}
+.button_1:hover {
+  transform: scale(0.98);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.button_1:active {
+  transform: scale(0.97);
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
