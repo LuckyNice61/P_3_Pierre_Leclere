@@ -125,12 +125,22 @@ footer {
   color: #FFFFFF;
   background-color: #353535;
 }
+@media all and (min-width: 700px) {
+  footer {
+    padding: 40px;
+  }
+}
 
 .logo_footer {
   padding-bottom: 10px;
 }
+@media all and (min-width: 700px) {
+  .logo_footer {
+    padding-bottom: 15px;
+  }
+}
 
-footer .logo img {
+.logo_footer img {
   width: auto;
   height: 20px;
 }
@@ -139,10 +149,22 @@ footer .logo img {
   line-height: 27px;
   display: flex;
 }
+@media all and (min-width: 700px) {
+  .footer_menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .footer_menu i {
   font-size: 0.9rem;
   margin-right: 10px;
+}
+
+.footer_menu,
+.logo {
+  width: 100%;
+  max-width: 1100px;
 }
 
 .container_fonctionnement {
@@ -196,7 +218,7 @@ footer .logo img {
 }
 
 .choice i {
-  padding: 0 80em 0 0;
+  padding: 0 80em 0 30px;
 }
 
 .choice:nth-child(1) i {
@@ -251,6 +273,11 @@ footer .logo img {
   flex-flow: row wrap;
   justify-content: flex-start;
 }
+@media all and (min-width: 700px) {
+  .cards {
+    width: calc((336px + 20px)*3);
+  }
+}
 
 .card {
   display: flex;
@@ -266,6 +293,8 @@ footer .logo img {
 }
 
 .card_photo {
+  position: relative;
+  overflow: hidden;
   height: 180px;
 }
 
@@ -273,9 +302,44 @@ footer .logo img {
   width: 100%;
 }
 
-.cards .card_infos {
+.card_infos {
   position: relative;
   margin: 15px;
+}
+.card_infosh3 {
+  margin: 0;
+}
+.card_infosname {
+  padding-bottom: 5px;
+}
+.card_infoscity {
+  font-weight: 300;
+}
+.card_infosfavorite {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+}
+
+.card_label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+  color: #278870;
+  background-color: #99E2D0;
 }
 
 .button_1 {
@@ -302,6 +366,42 @@ footer .logo img {
 .button_1:active {
   transform: scale(0.97);
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+img {
+  width: 100%;
+}
+
+.menus {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50px);
+  border-radius: 42px 42px 0 0;
+  background-color: #F6F6F6;
+}
+@media all and (min-width: 700px) {
+  .menus {
+    padding: 40px 30px;
+  }
+}
+
+.top_menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  letter-spacing: 0.07rem;
+}
+
+.card_favorite {
+  margin: 0 15px;
+  padding: 20px;
+  color: #000000;
+}
+
+.choix_plat {
+  margin-bottom: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */
