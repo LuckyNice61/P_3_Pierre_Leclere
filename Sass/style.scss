@@ -11,7 +11,7 @@
 
 
      
-   /////////////
+   ///////////// Fonctionnement //////
 
    .container_fonctionnement {
     display: flex;
@@ -58,7 +58,7 @@
 }
 
 .choice i {
-  padding: 0 80em 0 0;
+  padding: 0 80em 0 30px;
 }
 
 .choice:nth-child(1) i {
@@ -99,7 +99,7 @@
    
     
 
-////////
+//////// restaurant ///
 
     .container-restaurants {
       display: flex;
@@ -112,7 +112,10 @@
     .cards{
       display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start
+        justify-content: flex-start;
+        @include tablet {
+          width: calc((336px + 20px)*3); 
+        }
     }
     
     .card {
@@ -129,7 +132,8 @@
     }
     
     .card_photo {
-      
+      position: relative;
+        overflow: hidden;
       height: 180px;
     }
     
@@ -137,17 +141,80 @@
       width: 100%;
     }
     
-    .cards .card_infos {
+   .card_infos {
       position: relative;
-      margin: 15px; }
+      margin: 15px; 
+      &h3 {
+        margin: 0;
+      }
+      &name {
+        padding-bottom: 5px;
+      }
+      &city {
+        font-weight: 300
+      }
+      &favorite {
+        font-size: 1.5rem;
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          height: 100%;
+      }
+    }
      
+    .card_label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 30px;
+      color: #278870;
+      background-color: #99E2D0; }
 
-  
-     
-         .button_1 {
-           @include btn
-         }
-                       
+      .button_1 {
+        @include btn
+      }
+
+
+     ////////// menu /////
+
+         
+  img {
+    width: 100%;
+  }                     
           
            
-            
+  .menus {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50px);
+    border-radius: 42px 42px 0 0;
+    background-color: #F6F6F6;
+  @include tablet {
+    padding: 40px 30px;
+  }}
+
+  .top_menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    letter-spacing: 0.07rem; }
+
+    .card_favorite {
+      margin: 0 15px;
+      padding: 20px;
+      color: #000000; }
+
+      .choix_plat {
+        margin-bottom: 32px; }

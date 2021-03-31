@@ -6,19 +6,35 @@ footer {
     align-items: center;
     padding: 25px 25px 35px 25px;
     color: #FFFFFF;
-    background-color: #353535; }
+    background-color: #353535; 
+@include tablet {
+    padding: 40px; 
+} }
 
     .logo_footer {
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+       @include tablet {
+        padding-bottom: 15px;  
+    } }
 
-      footer .logo img {
+    .logo_footer img {
         width: auto;
         height: 20px; }
 
         .footer_menu {
           line-height: 27px;
-          display: flex; }
+          display: flex; 
+          @include tablet {
+            flex-direction: row;
+            justify-content: space-between;  
+        } }
 
           .footer_menu i {
             font-size: 0.9rem;
             margin-right: 10px; }
+
+            .footer_menu,
+            .logo {
+              width: 100%;
+              max-width: 1100px; }
+              
