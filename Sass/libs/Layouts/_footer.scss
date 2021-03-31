@@ -7,9 +7,9 @@ footer {
     padding: 25px 25px 35px 25px;
     color: #FFFFFF;
     background-color: #353535; 
-@include tablet {
-    padding: 40px; 
-} }
+    @include tablet {
+        padding: 40px; 
+    } }
 
     .logo_footer {
       padding-bottom: 10px;
@@ -33,8 +33,6 @@ footer {
             font-size: 0.9rem;
             margin-right: 10px; }
 
-            .footer_menu,
-            .logo {
+            .footer_menu .logo {
               width: 100%;
               max-width: 1100px; }
-              
