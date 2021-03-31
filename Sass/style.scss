@@ -8,9 +8,9 @@
 @import "libs/Layouts/footer.scss";
 @import "compenents/buttons.scss";
 
-///////////// Fonctionnement //////
+// Fonctionnement //
 
-.container_fonctionnement {
+.container_fonctionnement { // pour positionner titre et les 3 choix
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -19,7 +19,7 @@
   width: auto;
 }
 
-.container_choice {
+.container_choice { // pour positionner les 3 choix
   display: flex;
   flex-direction: column;
   @include tablet {
@@ -30,7 +30,7 @@
   }
 }
 
-.choice {
+.choice { // encadré blanc de chaque choix
   font-weight: 500;
   position: relative;
   display: flex;
@@ -61,10 +61,7 @@
 }
 
 .choice i {
-  padding: 0px 30px 0px 40px; // pour placer l'icone et le tete des 3 choix
-}
-.choice text {
-  align-self: center;
+  padding: 0px 30px 0px 40px; // pour placer l'icone et le texte des 3 choix
 }
 :nth-child(1) i {
   font-size: 1.2em;
@@ -79,7 +76,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: calc(100% - 30px);
+    width: calc(100% + 30px); // pour centrer le cercle violet et le chiffre à à chaque cadre des 3 choix
   }
 }
 
@@ -110,9 +107,9 @@
   align-self: flex-start;
 }
 
-//////// restaurant ///
+// Restaurant /
 
-.container-restaurants {
+.container-restaurants { // contient les 4 cards restaurant + titre
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -120,26 +117,17 @@
   background-color: $primaire-color;
 }
 
-.cards {
+.cards { // pour les 4 cars
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   @include tablet {
-    width: calc((336px + 20px) * 2);
-    margin: auto;
-  }
-}
-.cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  @include tablet {
-    width: calc((336px + 20px) * 2);
+    width: calc((336px + 20px) * 2); // pour affichage par 2 et tille differentes
     margin: auto;
   }
 }
 
-.card {
+.card {// card unique
   display: flex;
   overflow: hidden;
   align-self: center;
@@ -155,7 +143,7 @@
 
 .card_photo {
   position: relative;
-  overflow: hidden;
+  overflow: hidden;// pas de dépassement
   height: 180px;
 }
 
@@ -163,13 +151,10 @@
   width: 100%;
 }
 
-.card_infos {
+.card_infos { // nom + ville
   position: relative;
   margin: 15px;
   line-height: 0.5;
-  &h3 {
-    margin: 0;
-  }
 }
 
 .card_name {
@@ -180,7 +165,7 @@
   font-weight: 300;
 }
 
-.card_favorite {
+.card_favorite { // posionnement coeur
   font-size: 1.5rem;
   position: absolute;
   top: 0;
@@ -192,7 +177,7 @@
   height: 100%;
 }
 
-.card_label {
+.card_label { // petite étiquette "nouveau"
   font-size: 0.85rem;
   font-weight: 500;
   position: absolute;
@@ -216,16 +201,18 @@
   @include btn;
 }
 
-////////// menu /////
+/// Fin Page Home ///
 
-img {
+// Menu //
+
+img { //image restau
   width: 100%;
   height: 270px;
   @include tablet {
     height: 400px;
   }
 }
-.button_back {
+.button_back { // fleche retour
   font-size: 1.3rem;
   position: absolute;
   left: 0;
@@ -239,33 +226,33 @@ img {
   border-radius: 50%;
 }
 
-.menus {
+.menus { // Titre + plats + Btn
   position: relative;
   display: flex;
   flex-direction: column;
   transform: translateY(-50px);
   border-radius: 42px 42px 0 0;
-  background-color: #f6f6f6;
+  background-color:$primaire-color;
   @include tablet {
     padding: 40px 30px;
   }
 }
 
-.top_menu {
+.top_menu { // Titre + Coeur
   position: relative;
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
-  letter-spacing: 0.07rem;
+  letter-spacing: 0.07rem; // interlettre
   justify-content: space-between;
 }
 
-.card_favorite {
+.card_favorite { // coeur
   margin: 0 15px;
   color: #000000;
 }
 
-.choix_plat {
+.choix_plat { // entrees / plats / desserts
   margin-bottom: 32px;
 }
 
@@ -275,7 +262,7 @@ img {
   margin-left: 10px;
 }
 
-.choix_plat .trait {
+.choix_plat .trait { // petite ligen verte
   width: 40px;
   height: 3px;
   margin: 5px 0 12px 0;
@@ -283,21 +270,13 @@ img {
   margin-left: 10px;
 }
 
-/*.plats {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: calc(100% + 10px + 10px);
-            margin-left: -10px;
-             }*/
-
-.plat {
+.plat { // cadre blanc de chaque plat
   position: relative;
   top: 45px;
   overflow: hidden;
   margin-bottom: 12px;
   padding: 12px;
-  animation: move-card 1s cubic-bezier(0, 0, 0, 1) forwards;
+  animation: move-card 2s cubic-bezier(0, 0, 0, 1) forwards; // animation crée et qui s'arrete sur image de fin
   opacity: 1;
   border-radius: 15px;
   background-color: #ffffff;
@@ -308,58 +287,20 @@ img {
     opacity: 0;
   }
   100% {
-    transform: translateY(-45px);
+    transform: translateY(-45px); // permet de faire animer tous les plats lors de l'ouverture de la fenêtre  et petit plus de me les positionner sur l'axe y correctement :)
     opacity: 1;
   }
 }
 
-.choix_plat .plat--1 {
-  animation-delay: 0.16667s;
-}
-.choix_plat .plat--2 {
-  animation-delay: 0.33333s;
-}
 
-.choix_plat .plat--3 {
-  animation-delay: 0.5s;
-}
-
-.choix_plat .plat--4 {
-  animation-delay: 0.66667s;
-}
-
-.choix_plat .plat--5 {
-  animation-delay: 0.83333s;
-}
-
-.choix_plat .plat--6 {
-  animation-delay: 1s;
-}
-
-.choix_plat .plat--7 {
-  animation-delay: 1.16667s;
-}
-
-.choix_plat .plat--8 {
-  animation-delay: 1.33333s;
-}
-
-.choix_plat .plat--9 {
-  animation-delay: 1.5s;
-}
-
-.choix_plat .plat--10 {
-  animation-delay: 1.66667s;
-}
-
-.plat_nom {
+.plat_nom { //nom plats
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.8rem;
   width: calc(100% - 60px);
 }
 
-.plat_ligne2 {
+.plat_ligne2 { // ingrédients + prix
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -368,7 +309,7 @@ img {
     overflow 400ms;
 }
 
-.plat_info {
+.plat_info { // ingrédients
   font-size: 1rem;
   font-weight: 300;
   overflow: hidden;
@@ -377,32 +318,32 @@ img {
   text-overflow: ellipsis;
 }
 
-.plat_prix {
+.plat_prix { // prix
   font-size: 1rem;
   font-weight: bold;
   transition: margin-right 400ms;
 }
 
-.plat_valid {
+.plat_valid { // carré vert + animatation
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
   transition-duration: 400ms;
-  transform: translateX(60px);
+  transform: translateX(60px); // pour que le carré vert soit a droite et ne déborde pas
 }
 
 .plat:hover .plat_valid {
-  transform: translateX(0px);
+  transform: translateX(0px);// POur qu'il apparaissent et reste au bord à droite
 }
 
-.plat_valid_bg {
+.plat_valid_bg { // permet d'afficher le carré vert
   width: 60px;
   height: 100%;
   background: #99e2d0;
 }
 
-.plat_valid_icon {
+.plat_valid_icon { // positionner l'icone valider à le lié 
   font-size: 1.3rem;
   position: absolute;
   top: 0;
