@@ -7,25 +7,22 @@
 @import "libs/Layouts/header.scss";
 @import "libs/Layouts/footer.scss";
 
+///////////// Fonctionnement //////
 
+.container_fonctionnement {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: $color-white;
+  width: auto;
+}
 
-
-     
-   ///////////// Fonctionnement //////
-
-   .container_fonctionnement {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #FFFFFF;
-    width: auto;
-   }
-
-   .container_choice {
-    display: flex;
-    flex-direction: column;
-  @include tablet { // media queries 
+.container_choice {
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    // media queries
     font-size: 1.4rem;
     flex-direction: row;
     justify-content: space-around;
@@ -41,8 +38,8 @@
   width: 336px;
   height: 74px;
   border-radius: 20px;
-  background: #F6F6F6;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15); 
+  background: $primaire-color;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 24px;
   text-align: center;
   @include tablet {
@@ -51,64 +48,66 @@
     height: 150px;
     margin: 15px;
     padding: 15px;
-    text-align: center; 
+    text-align: center;
     &.choice i {
       display: none;
-     } 
     }
+  }
 }
-.choice_pink{
+.choice_pink {
+  // 3ème choix fonctionnement
   background: #f2eafb;
 }
 
 .choice i {
-  padding: 0px 30px 0px 40px;  
+  padding: 0px 30px 0px 40px; // pour placer l'icone et le tete des 3 choix
 }
 .choice text {
   align-self: center;
-}:nth-child(1) i {
-  font-size:1.2em; }
+}
+:nth-child(1) i {
+  font-size: 1.2em;
+}
 
-  .circle_number {
-    position: absolute; 
-    top: 25px;
-    left: -15px;
-    @include tablet {
-      top: -14.4px;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      width: calc(100% - 30px);}
-  }
-  
-  .circle {
-    position: absolute;
-    z-index: 4;
-    width: 28.8px;
-    height: 28.8px;
-    border-radius: 50%;
-    background-color: #9356DC;
-  }  
-       
-  .number {
-    font-size: 0.85rem;
-    font-weight: 400;
-    position: absolute;
-    z-index: 5;
+.circle_number {
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  @include tablet {
+    top: -14.4px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 28.8px;
-    height: 28.8px;
-    color: #FFFFFF; 
+    flex-direction: column;
+    width: calc(100% - 30px);
   }
-  
-  .titre_fonctionnement {
-      margin: 40px 0px 20px 0; 
-      align-self: flex-start;
-  }
-     
-    
+}
+
+.circle {
+  position: absolute;
+  z-index: 4;
+  width: 28.8px;
+  height: 28.8px;
+  border-radius: 50%;
+  background-color: $color-circle;
+}
+
+.number {
+  font-size: 0.85rem;
+  font-weight: 400;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28.8px;
+  height: 28.8px;
+  color: $color-white;
+}
+
+.titre_fonctionnement {
+  margin: 40px 0px 20px 0;
+  align-self: flex-start;
+}
 
 //////// restaurant ///
 
@@ -117,176 +116,173 @@
   align-items: center;
   flex-direction: column;
   padding: 20px 20px 40px 20px;
-  background-color: #F6F6F6; 
+  background-color: $primaire-color;
 }
-    
-.cards{
+
+.cards {
   display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    @include tablet {
-      width: calc((336px + 20px)*2);
-      margin: auto;
-    }
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  @include tablet {
+    width: calc((336px + 20px) * 2);
+    margin: auto;
+  }
 }
-.cards{
+.cards {
   display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    @include tablet {
-      width: calc((336px + 20px)*2); 
-      margin: auto;
-    }
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  @include tablet {
+    width: calc((336px + 20px) * 2);
+    margin: auto;
+  }
 }
 
 .card {
   display: flex;
-      overflow: hidden;
-      align-self: center;
-      width: 336px;
-      height: 255px;
-      margin: 10px;
-      margin-bottom: 10px;
-      position: relative;
-      border-radius: 15px;
-      background-color: #FFFFFF;
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  align-self: center;
+  width: 336px;
+  height: 255px;
+  margin: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 15px;
+  background-color: $color-white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
-    .card_photo {
-      position: relative;
-        overflow: hidden;
-      height: 180px;
-    }
-    
-    .card_photo img {
-      width: 100%;
-    }
-    
-   .card_infos {
-      position: relative;
-      margin: 15px; 
-      line-height: 0.5;
-      &h3 {
-        margin: 0;
-      }
-    }
+.card_photo {
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+}
 
-    .card_name{
-     padding-bottom: 5px;
-    }
+.card_photo img {
+  width: 100%;
+}
 
-    .card_city {
-      font-weight: 300;
-    }
-
-    .card_favorite {
-
-      font-size: 1.5rem;
-          position: absolute;
-          top: 0;
-          right: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 20%;
-          height: 100%;
-            }
-     
-    .card_label {
-      font-size: 0.85rem;
-      font-weight: 500;
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 80px;
-      height: 30px;
-      color: #278870;
-      background-color: #99E2D0; }
-
-      .titre-h2 {
-        align-self: flex-start;
-        margin: 20px 0 20px 20px;
-      }
-
-      .button_1 {
-        @include btn
-      }
-
-
-     ////////// menu /////
-
-         
-  img {
-    width: 100%;
-    height: 270px;
-    @include tablet {
-      height: 400px;
-    }
+.card_infos {
+  position: relative;
+  margin: 15px;
+  line-height: 0.5;
+  &h3 {
+    margin: 0;
   }
-  .button-back{
-  font-size: 1.3rem;
+}
+
+.card_name {
+  padding-bottom: 5px;
+}
+
+.card_city {
+  font-weight: 300;
+}
+
+.card_favorite {
+  font-size: 1.5rem;
   position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
-  margin: 12px;
-  border: 0 solid #EAEAEA;
-  border-radius: 50%; }
+  width: 20%;
+  height: 100%;
+}
 
- 
-          
-           
-  .menus {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    transform: translateY(-50px);
-    border-radius: 42px 42px 0 0;
-    background-color: #F6F6F6;
-    @include tablet {
-      padding: 40px 30px;
-    }}
+.card_label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+  color: $color-new;
+  background-color: $color-footer;
+}
 
-  .top_menu {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-    letter-spacing: 0.07rem;
-    justify-content: space-between; }
+.titre-h2 {
+  align-self: flex-start;
+  margin: 20px 0 20px 20px;
+}
 
-    h4 {
-      font-family: "Shrikhand", cursive;
-    font-size: 1.75rem;
-    margin: 20px;
+.button_1 {
+  @include btn;
+}
+
+////////// menu /////
+
+img {
+  width: 100%;
+  height: 270px;
+  @include tablet {
+    height: 400px;
   }
+}
+.button_back {
+  font-size: 1.3rem;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin: 12px;
+  border: 0 solid #eaeaea;
+  border-radius: 50%;
+}
 
-    .card_favorite {
-      margin: 0 15px;
-      color: #000000; }
+.menus {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50px);
+  border-radius: 42px 42px 0 0;
+  background-color: #f6f6f6;
+  @include tablet {
+    padding: 40px 30px;
+  }
+}
 
-      .choix_plat {
-        margin-bottom: 32px; }
+.top_menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  letter-spacing: 0.07rem;
+  justify-content: space-between;
+}
 
-        .choix_plat .titre {
-          font-weight: 200;
-          color: #000000;
-          margin-left: 10px; }
+.card_favorite {
+  margin: 0 15px;
+  color: #000000;
+}
 
-          .choix_plat .trait {
-            width: 40px;
-            height: 3px;
-            margin: 5px 0 12px 0;
-            background-color: #99E2D0;
-            margin-left: 10px; }
+.choix_plat {
+  margin-bottom: 32px;
+}
 
-           /*.plats {
+.choix_plat .titre {
+  font-weight: 200;
+  color: #000000;
+  margin-left: 10px;
+}
+
+.choix_plat .trait {
+  width: 40px;
+  height: 3px;
+  margin: 5px 0 12px 0;
+  background-color: #99e2d0;
+  margin-left: 10px;
+}
+
+/*.plats {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -294,106 +290,127 @@
             margin-left: -10px;
              }*/
 
-           .plat {
-            position: relative;
-            top: 45px;
-            overflow: hidden;
-            margin-bottom: 12px;
-            padding: 12px;
-            animation: move-card 1s cubic-bezier(0, 0, 0, 1) forwards;
-            opacity: 1;
-            border-radius: 15px;
-            background-color: #FFFFFF;
-            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-            
-               }
-               @keyframes move-card {
-                0% {
-                  opacity: 0;
-                  }
-                100% {
-                 transform: translateY(-45px); 
-                  opacity: 1;
-                  } }
+.plat {
+  position: relative;
+  top: 45px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  padding: 12px;
+  animation: move-card 1s cubic-bezier(0, 0, 0, 1) forwards;
+  opacity: 1;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+@keyframes move-card {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-45px);
+    opacity: 1;
+  }
+}
 
- .choix_plat .plat--1 {
-  animation-delay: 0.16667s;}
+.choix_plat .plat--1 {
+  animation-delay: 0.16667s;
+}
 .choix_plat .plat--2 {
-              animation-delay: 0.33333s; }
-           
- .choix_plat .plat--3 {
+  animation-delay: 0.33333s;
+}
+
+.choix_plat .plat--3 {
+  animation-delay: 0.5s;
+}
+
 .choix_plat .plat--4 {
-              animation-delay: 0.66667s; }
+  animation-delay: 0.66667s;
+}
 
- .choix_plat .plat--5 {
-              animation-delay: 0.83333s; }
-            
+.choix_plat .plat--5 {
+  animation-delay: 0.83333s;
+}
+
 .choix_plat .plat--6 {
-              animation-delay: 1s; }
+  animation-delay: 1s;
+}
 
- .choix_plat .plat--7 {
-              animation-delay: 1.16667s; }
-            
- .choix_plat .plat--8 {
-              animation-delay: 1.33333s; }
-            
- .choix_plat .plat--9 {
-              animation-delay: 1.5s; }
-            
- .choix_plat .plat--10 {
-              animation-delay: 1.66667s; } }
+.choix_plat .plat--7 {
+  animation-delay: 1.16667s;
+}
 
-              .plat_nom {
-                font-size: 1.125rem;
-                font-weight: 500;
-                line-height: 1.8rem;
-                width: calc(100% - 60px); }
+.choix_plat .plat--8 {
+  animation-delay: 1.33333s;
+}
 
-                .plat_ligne2 {
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: space-between;
-                  transition: width 400ms, text-overflow 400ms, margin-right 400ms, overflow 400ms; }
+.choix_plat .plat--9 {
+  animation-delay: 1.5s;
+}
 
-                  .plat_info {
-                    font-size: 1rem;
-                    font-weight: 300;
-                    overflow: hidden;
-                    transition: width 400ms, text-overflow 400ms;
-                    white-space: nowrap;
-                    text-overflow: ellipsis; }
+.choix_plat .plat--10 {
+  animation-delay: 1.66667s;
+}
 
-                    .plat_prix {
-                      font-size: 1rem;
-                      font-weight: bold;
-                      transition: margin-right 400ms; }
+.plat_nom {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  width: calc(100% - 60px);
+}
 
-                      .plat_valid {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        height: 100%;
-                        transition-duration: 400ms;
-                        transform: translateX(60px); }
+.plat_ligne2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 15px;
+  transition: width 400ms, text-overflow 400ms, margin-right 400ms,
+    overflow 400ms;
+}
 
-                        .plat:hover .plat_valid {
-                          transform: translateX(0px);
-                        }
+.plat_info {
+  font-size: 1rem;
+  font-weight: 300;
+  overflow: hidden;
+  transition: width 400ms, text-overflow 400ms;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
-            .plat_valid_bg {
-                          width: 60px;
-                          height: 100%;
-                          background: #99E2D0; }
+.plat_prix {
+  font-size: 1rem;
+  font-weight: bold;
+  transition: margin-right 400ms;
+}
 
-                          .plat_valid_icon {
-                            font-size: 1.3rem;
-                            position: absolute;
-                            top: 0;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 100%;
-                            height: 100%;
-                            transition-duration: 400ms;
-                            transform: rotate(360deg);
-                            color: #FFFFFF; }
+.plat_valid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  transition-duration: 400ms;
+  transform: translateX(60px);
+}
+
+.plat:hover .plat_valid {
+  transform: translateX(0px);
+}
+
+.plat_valid_bg {
+  width: 60px;
+  height: 100%;
+  background: #99e2d0;
+}
+
+.plat_valid_icon {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition-duration: 400ms;
+  transform: rotate(360deg);
+  color: #ffffff;
+}

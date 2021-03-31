@@ -1,32 +1,37 @@
-header { // encadré et permet de faire l'ombre
-    display: flex;
-    background-color: #FFFFFF;
-    position: relative;
-     }
-  
-     .container_header { // dimensions et ombre
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 62px; 
-      box-shadow: 0 50px 10px 0 rgba(0, 0, 0, 0.06)
-    }
-   
-    .container_header img { // taille logo + marge
-      width: auto;
-      height: 30px; }   
-  
-      .localisation_header { // positionnement localisation + icone
-        display: flex;
-        align-items: center;
-        color: $color-black;
-        height: 50px; 
-        position: absolute; // enfant de header
-        margin: 15px;
-        top: 50px;}
-        
-        .localisation_header i{ 
-          margin-right: 10px;// premet d'espacer l'icone du texte
-           }
-  
+header {
+  // encadré et permet de faire l'ombre
+  display: flex;
+  background-color: $color-white;
+  position: relative;
+}
+
+.container_header {
+  // dimensions et ombre
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 62px;
+  box-shadow: 0 50px 10px 0 rgba(0, 0, 0, 0.06);
+}
+
+.container_header img {
+  // taille logo + marge
+  width: auto;
+  height: 30px;
+}
+
+.localisation_header {
+  // positionnement localisation + icone
+  display: flex;
+  align-items: center;
+  color: $color-black;
+  height: 50px;
+  position: absolute; // enfant de header
+  margin: 15px;
+  top: 50px;
+}
+
+.localisation_header i {
+  margin-right: 10px; // premet d'espacer l'icone du texte
+}

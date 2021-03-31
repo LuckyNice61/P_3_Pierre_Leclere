@@ -1,178 +1,252 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu - Le délice des sens</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/7cfecc5119.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7cfecc5119.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container_header"><!--contenair fleche retour et logo-->
-            <div class="button_back"><!-- bouton retour-->
-                <a href="index.html">
-                    <i class="fas fa-arrow-left"></i><!--fleche-->
-                </a>
-            </div>
-            <div class="logo_top"><!--logo ohmyfood-->
-                <a href="index.html">
-                    <img src="images/logo/ohmyfood.png" alt="logo ohmyfood">
-                </a>
-            </div>
+      <div class="container_header">
+        <!--contenair fleche retour et logo-->
+        <div class="button_back">
+          <!-- bouton retour-->
+          <a href="index.html">
+            <i class="fas fa-arrow-left"></i
+            ><!--fleche-->
+          </a>
         </div>
+        <div class="logo_top">
+          <!--logo ohmyfood-->
+          <a href="index.html">
+            <img src="images/logo/ohmyfood.png" alt="logo ohmyfood" />
+          </a>
+        </div>
+      </div>
     </header>
 
     <main>
-        <div class="container_ensemble"><!--contient l'image du restau-->
-        <img src="images/restaurants/le_delice_des_sens.jpg" alt="restaurant La palette du goût"></div>
-        <div class="menus"><!--contient le h3 + les plats + bouton commander-->
-            <div class="top_menu"><!--nom du restau + coeur cliquable-->
-                <h4>Le délice des sens</h4>
-                <div class="card_favorite">
-                    <i class="coeur2 far fa-heart"></i>
-                    <i class="coeur1 fas fa-heart"></i>
+      <div class="container_ensemble">
+        <!--contient l'image du restau-->
+        <img
+          src="images/restaurants/le_delice_des_sens.jpg"
+          alt="restaurant La palette du goût"
+        />
+      </div>
+      <div class="menus">
+        <!--contient le h3 + les plats + bouton commander-->
+        <div class="top_menu">
+          <!--nom du restau + coeur cliquable-->
+          <h4>Le délice des sens</h4>
+          <div class="card_favorite">
+            <i class="coeur2 far fa-heart"></i>
+            <i class="coeur1 fas fa-heart"></i>
+          </div>
+        </div>
+        <div class="choix_plat">
+          <!--contenair choix entrées -->
+          <div class="titre">ENTRÉES</div>
+          <div class="trait"></div>
+          <!--petit trait vert en dessous de entrées-->
+          <div class="plats">
+            <!--container des différentes entrées proposés-->
+            <div class="plat plat_1">
+              <!--rectangle blanc de chaques plats et ses infos-->
+              <div class="plat_nom">Tartare de thon</div>
+              <div class="plat_ligne2">
+                <!--permet d'affihcer info + prix sur meme ligne-->
+                <div class="plat_info">Assaisonné au yuzu</div>
+                <div class="plat_prix">25€</div>
+              </div>
+              <div class="plat_valid">
+                <!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
+                <div class="plat_valid_bg"></div>
+                <div class="plat_valid_icon">
+                  <i class="fas fa-check-circle"></i>
                 </div>
+              </div>
             </div>
-            <div class="choix_plat"><!--contenair choix entrées -->
-                <div class="titre">ENTRÉES</div>
-                <div class="trait"></div><!--petit trait vert en dessous de entrées-->
-                <div class="plats"><!--container des différentes entrées proposés-->
-                    <div class="plat plat_1"><!--rectangle blanc de chaques plats et ses infos-->
-                        <div class="plat_nom">Tartare de thon</div>
-                        <div class="plat_ligne2"><!--permet d'affihcer info + prix sur meme ligne-->
-                            <div class="plat_info">Assaisonné au yuzu</div>
-                            <div class="plat_prix">25€</div>
-                        </div>
-                        <div class="plat_valid"><!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
-                            <div class="plat_valid_bg"></div>
-                            <div class="plat_valid_icon"><i class="fas fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                    <div class="plat plat_2"><!--rectangle blanc de chaques plats et ses infos-->
-                        <div class="plat_nom">Bouchée de homard croustillant </div>
-                        <div class="plat_ligne2"><!--permet d'affihcer info + prix sur meme ligne-->
-                            <div class="plat_info">Et sa farandole de petits légumes</div>
-                            <div class="plat_prix">35€</div>
-                        </div>
-                        <div class="plat_valid"><!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
-                            <div class="plat_valid_bg"></div>
-                            <div class="plat_valid_icon"><i class="fas fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                    <div class="plat plat_3"><!--rectangle blanc de chaques plats et ses infos-->
-                        <div class="plat_nom">Velouté de cèpes </div>
-                        <div class="plat_ligne2"><!--permet d'affihcer info + prix sur meme ligne-->
-                            <div class="plat_desc">Aux truffes</div>
-                            <div class="plat_prix">20€</div>
-                        </div>
-                        <div class="plat_valid"><!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
-                            <div class="plat_valid_bg"></div>
-                            <div class="plat_valid_icon"><i class="fas fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                </div><!--fin container des differents plats-->
-            </div><!--fin container entrées ou plats ou desserts-->
-            <div class="choix_plat"><!--contenair choix plats-->
-                <div class="titre">PLATS</div>
-                <div class="trait"></div><!--petit trait vert en dessous de plats-->
-                <div class="plats"><!--container des différents plats proposés-->
-                    <div class="plat plat_4"><!--rectangle blanc de chaques plats et ses infos-->
-                        <div class="plat_nom">Poulet rôti aux herbes de Provence </div>
-                        <div class="plat_ligne2"><!--permet d'affihcer info + prix sur meme ligne-->
-                            <div class="plat_info">Et sa crème de truffe</div>
-                            <div class="plat_prix">40€</div>
-                        </div>
-                        <div class="plat_valid"><!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
-                            <div class="plat_valid_bg"></div>
-                            <div class="plat_valid_icon"><i class="fas fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                    <div class="plat plat_5"><!--rectangle blanc de chaques plats et ses infos-->
-                        <div class="plat_nom">Langouste rôtie </div>
-                        <div class="plat_ligne2"><!--permet d'affihcer info + prix sur meme ligne-->
-                            <div class="plat_info">Et ses légumes de saison</div>
-                            <div class="plat_prix">35€</div>
-                        </div>
-                        <div class="plat_valid"><!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
-                            <div class="plat_valid_bg"></div>
-                            <div class="plat_valid_icon"><i class="fas fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                    <div class="plat plat_6"><!--rectangle blanc de chaques plats et ses infos-->
-                        <div class="plat_nom">Côte de boeuf Angus</div>
-                        <div class="plat_ligne2"><!--permet d'affihcer info + prix sur meme ligne-->
-                            <div class="plat_info">Et sa purée de panais</div>
-                            <div class="plat_prix">44€</div>
-                        </div>
-                        <div class="plat_valid"><!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
-                            <div class="plat_valid_bg"></div>
-                            <div class="plat_valid_icon"><i class="fas fa-check-circle"></i></div>
-                        </div>
-                    </div>
+            <div class="plat plat_2">
+              <!--rectangle blanc de chaques plats et ses infos-->
+              <div class="plat_nom">Bouchée de homard croustillant</div>
+              <div class="plat_ligne2">
+                <!--permet d'affihcer info + prix sur meme ligne-->
+                <div class="plat_info">Et sa farandole de petits légumes</div>
+                <div class="plat_prix">35€</div>
+              </div>
+              <div class="plat_valid">
+                <!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
+                <div class="plat_valid_bg"></div>
+                <div class="plat_valid_icon">
+                  <i class="fas fa-check-circle"></i>
                 </div>
+              </div>
             </div>
-            <div class="choix_plat"><!--container choix des desserts-->
-                <div class="titre">DESSERTS</div>
-                <div class="trait"></div>
-                <div class="plats">
-                    <div class="plat plat_7"><!--rectangle blanc de chaques plats et ses infos-->
-                        <div class="plat_nom">Farandole de desserts</div>
-                        <div class="plat_ligne2"><!--permet d'affihcer info + prix sur meme ligne-->
-                            <div class="plat_desc">Du chef</div>
-                            <div class="plat_prix">18€</div>
-                        </div>
-                        <div class="plat_valid"><!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
-                            <div class="plat_valid_bg"></div>
-                            <div class="plat_valid_icon"><i class="fas fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                    <div class="plat plat_8"><!--rectangle blanc de chaques plats et ses infos-->
-                        <div class="plat_nom">Crème brulée </div>
-                        <div class="plat_ligne2"><!--permet d'affihcer info + prix sur meme ligne-->
-                            <div class="plat_info">Revisitée</div>
-                            <div class="plat_prix">22€</div>
-                        </div>
-                        <div class="plat_valid"><!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
-                            <div class="plat_valid_bg"></div>
-                            <div class="plat_valid_icon"><i class="fas fa-check-circle"></i></div>
-                        </div>
-                    </div>
-                    <div class="plat plat_9"><!--rectangle blanc de chaques plats et ses infos-->
-                        <div class="plat_nom">Tiramisu </div>
-                        <div class="plat_ligne2"><!--permet d'affihcer info + prix sur meme ligne-->
-                            <div class="plat_info">À la noisette</div>
-                            <div class="plat_prix">23€</div>
-                        </div>
-                        <div class="plat_valid"><!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
-                            <div class="plat_valid_bg"></div>
-                            <div class="plat_valid_icon"><i class="fas fa-check-circle"></i></div>
-                        </div>
-                    </div>
+            <div class="plat plat_3">
+              <!--rectangle blanc de chaques plats et ses infos-->
+              <div class="plat_nom">Velouté de cèpes</div>
+              <div class="plat_ligne2">
+                <!--permet d'affihcer info + prix sur meme ligne-->
+                <div class="plat_desc">Aux truffes</div>
+                <div class="plat_prix">20€</div>
+              </div>
+              <div class="plat_valid">
+                <!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
+                <div class="plat_valid_bg"></div>
+                <div class="plat_valid_icon">
+                  <i class="fas fa-check-circle"></i>
                 </div>
+              </div>
             </div>
+          </div>
+          <!--fin container des differents plats-->
+        </div>
+        <!--fin container entrées ou plats ou desserts-->
+        <div class="choix_plat">
+          <!--contenair choix plats-->
+          <div class="titre">PLATS</div>
+          <div class="trait"></div>
+          <!--petit trait vert en dessous de plats-->
+          <div class="plats">
+            <!--container des différents plats proposés-->
+            <div class="plat plat_4">
+              <!--rectangle blanc de chaques plats et ses infos-->
+              <div class="plat_nom">Poulet rôti aux herbes de Provence</div>
+              <div class="plat_ligne2">
+                <!--permet d'affihcer info + prix sur meme ligne-->
+                <div class="plat_info">Et sa crème de truffe</div>
+                <div class="plat_prix">40€</div>
+              </div>
+              <div class="plat_valid">
+                <!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
+                <div class="plat_valid_bg"></div>
+                <div class="plat_valid_icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="plat plat_5">
+              <!--rectangle blanc de chaques plats et ses infos-->
+              <div class="plat_nom">Langouste rôtie</div>
+              <div class="plat_ligne2">
+                <!--permet d'affihcer info + prix sur meme ligne-->
+                <div class="plat_info">Et ses légumes de saison</div>
+                <div class="plat_prix">35€</div>
+              </div>
+              <div class="plat_valid">
+                <!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
+                <div class="plat_valid_bg"></div>
+                <div class="plat_valid_icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="plat plat_6">
+              <!--rectangle blanc de chaques plats et ses infos-->
+              <div class="plat_nom">Côte de boeuf Angus</div>
+              <div class="plat_ligne2">
+                <!--permet d'affihcer info + prix sur meme ligne-->
+                <div class="plat_info">Et sa purée de panais</div>
+                <div class="plat_prix">44€</div>
+              </div>
+              <div class="plat_valid">
+                <!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
+                <div class="plat_valid_bg"></div>
+                <div class="plat_valid_icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="choix_plat">
+          <!--container choix des desserts-->
+          <div class="titre">DESSERTS</div>
+          <div class="trait"></div>
+          <div class="plats">
+            <div class="plat plat_7">
+              <!--rectangle blanc de chaques plats et ses infos-->
+              <div class="plat_nom">Farandole de desserts</div>
+              <div class="plat_ligne2">
+                <!--permet d'affihcer info + prix sur meme ligne-->
+                <div class="plat_desc">Du chef</div>
+                <div class="plat_prix">18€</div>
+              </div>
+              <div class="plat_valid">
+                <!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
+                <div class="plat_valid_bg"></div>
+                <div class="plat_valid_icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="plat plat_8">
+              <!--rectangle blanc de chaques plats et ses infos-->
+              <div class="plat_nom">Crème brulée</div>
+              <div class="plat_ligne2">
+                <!--permet d'affihcer info + prix sur meme ligne-->
+                <div class="plat_info">Revisitée</div>
+                <div class="plat_prix">22€</div>
+              </div>
+              <div class="plat_valid">
+                <!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
+                <div class="plat_valid_bg"></div>
+                <div class="plat_valid_icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="plat plat_9">
+              <!--rectangle blanc de chaques plats et ses infos-->
+              <div class="plat_nom">Tiramisu</div>
+              <div class="plat_ligne2">
+                <!--permet d'affihcer info + prix sur meme ligne-->
+                <div class="plat_info">À la noisette</div>
+                <div class="plat_prix">23€</div>
+              </div>
+              <div class="plat_valid">
+                <!--si plat validé petit rectangle vert avec bouton validé qui apparaît-->
+                <div class="plat_valid_bg"></div>
+                <div class="plat_valid_icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <div class="button_container">
-                <button class="button_1">Commander</button>
-            </div>
-        </div><!--fin container h3 + plats + bouton commander-->
+        <div class="button_container">
+          <button class="button_1">Commander</button>
+        </div>
+      </div>
+      <!--fin container h3 + plats + bouton commander-->
     </main>
 
     <footer>
-        <div class="logo_footer"><img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"></div>
-        <div class="footer_menu">
-            <div class="footer_line">
-                <i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a>
-            </div>
-            <div class="footer_line">
-                <i class="fas fa-hands-helping"></i> <a href="#">Devenir partenaire</a>
-            </div>
-            <div class="footer_line"><a href="#">Mentions légales</a></div>
-            <div class="footer_line"><a href="mailto:contact@ohmyfood.com">Contact</a></div>
+      <div class="logo_footer">
+        <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
+      </div>
+      <div class="footer_menu">
+        <div class="footer_line">
+          <i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a>
         </div>
+        <div class="footer_line">
+          <i class="fas fa-hands-helping"></i>
+          <a href="#">Devenir partenaire</a>
+        </div>
+        <div class="footer_line"><a href="#">Mentions légales</a></div>
+        <div class="footer_line">
+          <a href="mailto:contact@ohmyfood.com">Contact</a>
+        </div>
+      </div>
     </footer>
-</body></html>
+  </body>
+</html>

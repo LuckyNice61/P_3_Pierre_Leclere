@@ -1,34 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
-$font-logo-title:'Shrikhand' , cursive;
-$font-txt:'Roboto' , sans-serif; /* a voir dans mes variables je pense*/
+$font-logo-title: "Shrikhand", cursive;
+$font-txt: "Roboto", sans-serif; /* a voir dans mes variables je pense*/
 
 h1 {
-    
-    font-weight: 600;
-    font-size: 1.5rem;
-    
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
-h2, h3, p, li, div, a {
-    font-family: $font-txt;
+h2,
+h3,
+p,
+li,
+div,
+a {
+  font-family: $font-txt;
 }
 
 h4 {
-    font-family: $font-logo-title;
-    font-weight: 400;
+  font-family: $font-logo-title;
+  font-weight: 400;
+}
+.top_menu h4 {
+  font-family: $font-logo-title;
+  font-size: 1.7rem;
+  margin-left: 15px;
 }
 
+a,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: $color-black;
+}
 
-
-a, a:visited, a:link, a:active {
-    text-decoration: none;
-    color: black;}
-    
-
-footer a:visited, a:link, a:active {
-        text-decoration: none;
-        color: white;
-    }
-
+footer a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: $color-white;
+  &:hover {
+    color: $color-footer;
+  }
+}
