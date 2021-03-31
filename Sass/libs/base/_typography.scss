@@ -5,18 +5,30 @@ $font-logo-title:'Shrikhand' , cursive;
 $font-txt:'Roboto' , sans-serif; /* a voir dans mes variables je pense*/
 
 h1 {
-    font-family: $font-logo-title;
-    font-weight: normal;
+    
+    font-weight: 600;
+    font-size: 1.5rem;
+    
 }
 
-h2, h3, h4, p, li, div, a {
+h2, h3, p, li, div, a {
     font-family: $font-txt;
 }
 
-
-
-a {
-    text-decoration: none;
-    color: black;
-    
+h4 {
+    font-family: $font-logo-title;
+    font-weight: 400;
 }
+
+
+
+a, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: black;}
+    
+
+footer a:visited, a:link, a:active {
+        text-decoration: none;
+        color: white;
+    }
+

@@ -222,7 +222,11 @@
          
   img {
     width: 100%;
-  }          
+    height: 270px;
+    @include tablet {
+      height: 400px;
+    }
+  }
   .button-back{
   font-size: 1.3rem;
   position: absolute;
@@ -234,6 +238,8 @@
   margin: 12px;
   border: 0 solid #EAEAEA;
   border-radius: 50%; }
+
+ 
           
            
   .menus {
@@ -369,6 +375,10 @@
                         height: 100%;
                         transition-duration: 400ms;
                         transform: translateX(60px); }
+
+                        .plat:hover .plat_valid {
+                          transform: translateX(0px);
+                        }
 
             .plat_valid_bg {
                           width: 60px;
