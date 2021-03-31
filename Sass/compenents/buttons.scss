@@ -13,13 +13,13 @@
     font-size: 1rem;
     background: linear-gradient(175deg, $color-btn 10%, $color-circle 90%);
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
-    transition: box-shadow 150ms linear, transform 150ms linear;
+    transition: box-shadow 150ms linear, transform 150ms linear; // pour preparer un hover linéaire et doux
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.05);// grossi très légerement
       box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
     }
     &:active {
-      transform: scale(1.01);
+      transform: scale(1.01);// pour ne pas rétraicir
       box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.3);
       display: none;
     }
