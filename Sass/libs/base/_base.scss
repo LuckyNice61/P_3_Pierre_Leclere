@@ -1,0 +1,65 @@
+body {
+    width:100%;
+    margin: 0;
+}
+
+// page d'acceuil //
+
+.main { // 3 sections : reservez / fonctionnement /restaurnts
+    display:flex;
+    flex-direction: column;
+    @include desktop{
+        display: grid;
+        grid-template-columns: 1.2fr 2fr;
+    }
+    @include tv{
+        grid-template-columns: 1.2fr 3.5fr;
+    }
+}
+
+.container_para { // Section réservez
+    background-color: $primaire-color;
+    text-align: center;
+    padding-top: 4em;// espace entrer localisation et par reservez le menu..
+    padding-bottom: 3em;// espace entre btn explorez et h2 fonctionnement
+    line-height: 1em;
+    color: black;
+    &--tablet{
+        display: none;
+    }
+    &--mobile{
+        display: block;
+    }
+    @include desktop { // media queries
+        &--mobile{
+            display: none;
+        }
+        &--tablet{
+            display: block;
+        }
+    }
+    &.container_para h1 { // titre reservez le menu..
+        display: inline-block;
+        line-height: 1.2;
+        width: 98%;//pour disposer le texte correctement
+        text-align: center;
+        overflow: auto;
+        font-size: 1.8em;
+    }
+    & .p_para { // phrase découvrez des restaurants..
+        display: inline-block;
+        margin: auto;
+        line-height: 1.2;
+        width: 80%;//pour disposer le texte correctement
+        text-align: center;
+        overflow: auto;
+        padding-bottom:2em;
+    }
+}  
+
+.button_1 { // pour espacer le boutton correctement
+  margin-top: 20px;
+}
+
+// Fonctionnement //
+
