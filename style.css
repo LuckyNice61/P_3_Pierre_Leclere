@@ -37,15 +37,10 @@ a:active {
 }
 
 footer a:visited,
-a:link,
-a:active {
+footer a:link,
+footer a:active {
   text-decoration: none;
   color: #ffffff;
-}
-footer a:visited:hover,
-a:link:hover,
-a:active:hover {
-  color: #99e2d0;
 }
 
 body {
