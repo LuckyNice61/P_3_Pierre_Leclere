@@ -1,0 +1,24 @@
+footer {
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px 35px 25px;
+    color: #FFFFFF;
+    background-color: #353535; }
+
+    .logo_footer {
+      padding-bottom: 10px; }
+
+      footer .logo img {
+        width: auto;
+        height: 20px; }
+
+        .footer_menu {
+          line-height: 27px;
+          display: flex; }
+
+          .footer_menu i {
+            font-size: 0.9rem;
+            margin-right: 10px; }
