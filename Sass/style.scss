@@ -105,36 +105,45 @@
 
 //////// restaurant ///
 
-    .container-restaurants {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      padding: 20px 20px 40px 20px;
-      background-color: #F6F6F6; 
-    }
+.container-restaurants {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20px 40px 20px;
+  background-color: #F6F6F6; 
+}
     
-    .cards{
-      display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        @include tablet {
-          width: calc((336px + 20px)*3); 
-        }
+.cards{
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    @include tablet {
+      width: calc((336px + 20px)*3); 
     }
-    
-    .card {
-      display: flex;
-          overflow: hidden;
-          align-self: center;
-          width: 336px;
-          margin: 10px;
-          margin-bottom: 10px;
-          position: relative;
-          border-radius: 15px;
-          background-color: #FFFFFF;
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+.cards{
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    @include tablet {
+      width: calc((336px + 20px)*3); 
     }
-    
+}
+
+.card {
+  display: flex;
+      overflow: hidden;
+      align-self: center;
+      width: 336px;
+      height: 255px;
+      margin: 10px;
+      margin-bottom: 10px;
+      position: relative;
+      border-radius: 15px;
+      background-color: #FFFFFF;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
     .card_photo {
       position: relative;
         overflow: hidden;
@@ -148,6 +157,7 @@
    .card_infos {
       position: relative;
       margin: 15px; 
+      line-height: 0.5;
       &h3 {
         margin: 0;
       }

@@ -283,11 +283,23 @@ footer {
   }
 }
 
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+@media all and (min-width: 700px) {
+  .cards {
+    width: calc((336px + 20px)*3);
+  }
+}
+
 .card {
   display: flex;
   overflow: hidden;
   align-self: center;
   width: 336px;
+  height: 255px;
   margin: 10px;
   margin-bottom: 10px;
   position: relative;
@@ -309,6 +321,7 @@ footer {
 .card_infos {
   position: relative;
   margin: 15px;
+  line-height: 0.5;
 }
 .card_infosh3 {
   margin: 0;
