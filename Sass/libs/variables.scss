@@ -12,39 +12,3 @@ $breakpoint: (
   desktop: 1023px,
   tv: 1400px,
 );
-
-//images//
-$image-home: (
-  1: "images/restaurants/la_palette_du_gout 380x.jpg",
-  2: "images/restaurants/la_note_enchantée 380x.jpg",
-  3: "images/restaurants/a_la_francaise 380x.jpg",
-  4: "images/restaurants/le_delice_des_sens 380x.jpg",
-);
-
-$image-menu: (
-  1: "images/restaurants/la_palette_du_gout 380x.jpg",
-  2: "images/restaurants/la_note_enchantée 380x.jpg",
-  3: "images/restaurants/a_la_francaise 380x.jpg",
-  4: "images/restaurants/le_delice_des_sens 380x.jpg",
-);
-
-$image-menu-tablet: (
-  1: "images/restaurants/la_palette_du_gout 800x.jpg",
-  2: "images/restaurants/la_note_enchantée 800x.jpg",
-  3: "images/restaurants/a_la_francaise 800x.jpg",
-  4: "images/restaurants/le_delice_des_sens 800x.jpg",
-);
-
-$image-menu-desktop: (
-  1: "images/restaurants/la_palette_du_gout 1200x.jpg",
-  2: "images/restaurants/la_note_enchantée 1200x.jpg",
-  3: "images/restaurants/a_la_francaise 1200x.jpg",
-  4: "images/restaurants/le_delice_des_sens 1200x.jpg",
-);
-
-$radius: (
-  menu: 1rem,
-  tag: 3rem,
-  btn: 10rem,
-  propal: 1rem,
-);
