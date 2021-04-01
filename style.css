@@ -52,6 +52,55 @@ body {
   background-color: #f6f6f6;
 }
 
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #9356dc;
+  z-index: -1;
+  display: flex;
+}
+
+.loading .logo.header {
+  width: 80%;
+  max-width: 300px;
+}
+
+.loading .progress {
+  border: solid 2px #353535;
+  padding: 0.1rem;
+  width: 70%;
+  height: 0.4rem;
+  margin: auto;
+}
+
+.loading .progress__bar {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  animation: startup-bar 900ms;
+  transform-origin: left;
+}
+
+@keyframes startup-bar {
+  0% {
+    transform: scaleX(0);
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+  }
+  46% {
+    transform: scaleX(0.81);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 0.25, 1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .main {
   display: flex;
   flex-direction: column;
